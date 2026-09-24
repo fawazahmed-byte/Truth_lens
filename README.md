@@ -1,5 +1,8 @@
 # TruthLens — Misinformation Triage & Verification Platform
 
+**Hackathon ID:** AZIS-MKG6SQ
+participants : D.jason,Fawaz Ahmed
+
 > Civic-tech misinformation triage and human review platform built for the **Azisly.ai Hackathon**.
 
 TruthLens is a transparent misinformation-triage system that allows the public to submit viral claims, automatically detects predefined risk signals, keeps new claims in an `UNVERIFIED` state, provides a streamlined reviewer workflow, and publishes reviewed claims in a public feed.
@@ -68,15 +71,18 @@ All three required product decisions are implemented and documented in [DECISION
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 2. Configure Environment (Optional)
+
 A sample environment file is provided in `server/.env.example`.
 If a MongoDB Atlas URI is provided in `server/.env`, TruthLens connects directly to MongoDB Atlas. If omitted or running locally, TruthLens seamlessly uses its built-in memory store.
 
 ### 3. Run Development Servers
+
 ```bash
 # Terminal 1 — Start backend API (port 5000)
 npm run dev:server
@@ -84,9 +90,11 @@ npm run dev:server
 # Terminal 2 — Start frontend UI (port 5173)
 npm run dev:client
 ```
+
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### 4. Run Automated Tests
+
 ```bash
 cd server
 npm test
@@ -108,6 +116,8 @@ npm test
 ---
 
 ## ⚖️ Hackathon Compliance Note
+
 In accordance with hackathon instructions:
+
 - **No authentication** (no login, signup, passwords, or JWTs) is present.
 - Graders can freely inspect and evaluate the Public Feed, Submit Claim, and Reviewer Dashboard.
